@@ -1,0 +1,72 @@
+<!-- Barre de navigation -->
+<nav class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <a class="nav-link active align-items-left" href="#!"><i class="fa fa-mail-reply fa-3x text-muted" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-6 text-center text-muted font-weight-bold mt-2">
+      FICHE<br>BOUCHE A OREILLE
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</nav>
+<!-- Barre de navigation FIN -->
+
+  <div class="container-fluid">
+
+    <!-- Informations du médecin -->
+    <!--<div class="row border-line" style="height: 100px">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 justify-content-center text-center text-muted py-4">
+        MEDECIN GENERALISTE
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>-->
+
+    <div *ngIf="recieved" class="row border-line" style="height: 30vh">
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6 justify-content-center text-center text-muted py-4">
+        Hélène LAMBERT
+        <br>{{adviceSheet.doctorAddress}}
+        <br>0143577057
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+
+    <!-- Points forts et notables du professionel de santé sous forme de checklist -->
+    <div class="row border-line d-flex align-items-center" style="height: 100px">
+      <div class="col align-middle text-left text-muted">
+        A l'heure
+      </div>
+      <div class="col">
+      </div>
+      <div class="col text-right text-muted py-4"><i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="row border-line d-flex align-items-center" style="height: 100px">
+      <div class="col align-middle text-left text-muted">
+        A l'écoute
+      </div>
+      <div class="col">
+      </div>
+      <div class="col text-right text-muted py-4"><i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="row border-line d-flex align-items-center" style="height: 100px">
+      <div class="col align-middle text-left text-muted">
+        Personne douce
+      </div>
+      <div class="col">
+      </div>
+      <div class="col text-right text-muted py-4"><i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+
+  </div>

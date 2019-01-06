@@ -1,0 +1,81 @@
+<!-- Barre de navigation -->
+<nav class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <a class="nav-link active align-items-left" href="#!"><i class="fa fa-mail-reply fa-3x text-muted" aria-hidden="true"></i></a>
+    </div>
+    <div class="col-6 text-center text-muted font-weight-bold mt-2">
+      FORMULAIRE<br>BOUCHE A OREILLE
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</nav>
+<!-- Barre de navigation FIN -->
+
+<div class="container-fluid">
+
+  <div class="row border-line">
+    <div class="col">
+    </div>
+    <div class="col-lg-6 col-sm-12 text-center">
+      <div class="sm-form pl-3 mt-5">
+        <label for="form1" class="pl-3" id="info">Rentrer le prénom et le nom du médecin</label>
+        <input mdbInputDirective type="text" id="form1" class="form-control" placeholder="Ex: Hélène LAMBERT" [(ngModel)]="doctor.name" name="doctorName">
+      </div>
+      <!-- <p> nom du docteur {{ doctor.name }}</p> -->
+
+      <div class="sm-form pl-3 mt-5 mb-5">
+        <label for="form1" class="pl-3" id="info">Rentrer l'adresse compléte du médecin</label>
+        <input mdbInputDirective type="text" id="form1" class="form-control" placeholder="Ex: 34 rue Etienne Dolet 75020 Paris" [(ngModel)]="doctor.address" name="doctorAddress">
+      </div>
+      <!-- <p> adresse du docteur {{ doctor.address }}</p> -->
+    </div>
+    <div class="col">
+    </div>
+  </div>
+
+  <div class="row border-line">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-6 col-sm-12 text-center">
+      <div class="custom-control custom-checkbox flex-column my-4 d-flex col-6 justify-content-around">
+        <div class="sm-form pl-3 mt-5">
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">A l'heure</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">A l'écoute</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck3">
+            <label class="custom-control-label" for="customCheck3">Personne douce</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck4">
+            <label class="custom-control-label" for="customCheck4">Equipement moderne</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck5">
+            <label class="custom-control-label" for="customCheck5">Dépassement d'honoraire</label>
+          </div>
+          <div class="row">
+            <input type="checkbox" class="custom-control-input" id="customCheck6">
+            <label class="custom-control-label" for="customCheck6">Prise de rendez-vous difficile</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-light" (click)="newDoctor()">Valider</button>
+    </div>
+  </div>
+
+</div>
